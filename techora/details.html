@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Page</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="details.css">
+</head>
+<body>
+
+   
+    <div class="container py-5">
+        <div class="row">
+            <div class="col-md-6">
+                <img src="path_to_your_image.png" class="img-fluid" alt="Product Image">
+            </div>
+            <div class="col-md-6">
+                <h2>Premium Wireless Headphones</h2>
+                <p class="text-muted">₱1,299</p>
+                <p>Experience superior sound quality with our premium wireless headphones. Featuring active noise cancellation, 
+                    30-hour battery life, and premium comfort padding for extended listening sessions.</p>
+    
+                <div class="d-flex align-items-center">
+                    <label for="quantity" class="me-2">Quantity:</label>
+                    <input type="number" id="quantity" class="form-control w-25" value="1" min="1">
+                </div>
+    
+                <div class="product-buttons">
+                    <button class="btn btn-dark"><i class="bi bi-cart"></i> Add to Cart</button>
+                    <button class="btn btn-outline-dark">Buy Now</button>
+                    <button class="btn btn-outline-dark btn-wishlist">
+                        <img src="/techora/img/heart.svg" alt="Wishlist" class="wishlist-icon" width="16" height="16">
+                        Add to Wishlist
+                    </button>
+                </div>
+    
+                <div class="mt-3">
+                    <p>Free shipping on orders over ₱100</p>
+                    <p>2-year warranty included</p>
+                    <p>30-day return policy</p>
+                </div>
+            </div>
+        </div>
+    </div>
+        
+        <div class="row mt-5">
+            <div class="col-12">
+               
+                <ul class="nav nav-tabs" id="productTab" role="tablist">
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link active" id="description-tab" data-bs-toggle="tab" data-bs-target="#description" type="button" role="tab" aria-controls="description" aria-selected="true">Description</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="specifications-tab" data-bs-toggle="tab" data-bs-target="#specifications" type="button" role="tab" aria-controls="specifications" aria-selected="false">Specifications</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="reviews-tab" data-bs-toggle="tab" data-bs-target="#reviews" type="button" role="tab" aria-controls="reviews" aria-selected="false">Reviews</button>
+                    </li>
+                </ul>
+        
+                <div class="tab-content p-3 border border-top-0" id="productTabContent">
+                 
+                    <div class="tab-pane fade show active" id="description" role="tabpanel" aria-labelledby="description-tab">
+                        <p>This product offers excellent sound quality and comfort. Perfect for all-day listening without fatigue. Ideal for work, travel, or casual listening.</p>
+                        <div class="card p-3 mb-3">
+                            <h6 class="card-title">Key Features</h6>
+                            <ul>
+                                <li>High-quality sound performance</li>
+                                <li>Long-lasting comfort</li>
+                                <li>Noise isolation for clear calls</li>
+                                <li>Seamless wireless connection</li>
+                            </ul>
+                        </div>
+                        <div class="card p-3 mb-3">
+                            <h6 class="card-title">What's Included</h6>
+                            <ul>
+                                <li>Premium Wireless Headphones</li>
+                                <li>USB-C charging cable</li>
+                                <li>3.5mm audio cable</li>
+                                <li>Carrying case</li>
+                                <li>User manual</li>
+                            </ul>
+                        </div>
+                    </div>
+        
+                    <div class="tab-pane fade" id="specifications" role="tabpanel" aria-labelledby="specifications-tab">
+                        <ul>
+                            <li>Driver size: 40mm</li>
+                            <li>Frequency range: 20Hz – 20kHz</li>
+                            <li>Impedance: 32Ω</li>
+                            <li>Bluetooth range: 10m</li>
+                            <li>Weight: 250g</li>
+                        </ul>
+                    </div>
+        
+                    
+                    <div class="tab-pane fade" id="reviews" role="tabpanel" aria-labelledby="reviews-tab">
+                        <p>No reviews yet. Be the first to review this product!</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    <div class="container mt-5">
+    <h4>Related Products</h4>
+    <div class="row">
+
+        <div class="col-md-4 mb-4">
+            <div class="card">
+                <img src="path_to_related_product1.png" class="card-img-top" alt="Related Product 1">
+                <div class="card-body">
+                    <h5 class="card-title">Power Bank 20000mAh</h5>
+                    <p class="card-text">₱89</p>
+                    <div class="d-flex gap-2">
+                        <button class="btn btn-dark w-50"><i class="bi bi-cart"></i> Add to Cart</button>
+                        <button class="btn btn-outline-dark w-50 btn-wishlist">
+                            <img src="/techora/img/heart.svg" alt="Wishlist" class="wishlist-icon" width="16" height="16">
+                            Add to Wishlist
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-4 mb-4">
+            <div class="card">
+                <img src="path_to_related_product2.png" class="card-img-top" alt="Related Product 2">
+                <div class="card-body">
+                    <h5 class="card-title">Power Bank 20000mAh</h5>
+                    <p class="card-text">₱89</p>
+                    <div class="d-flex gap-2">
+                        <button class="btn btn-dark w-50"><i class="bi bi-cart"></i> Add to Cart</button>
+                        <button class="btn btn-outline-dark w-50 btn-wishlist">
+                            <img src="/techora/img/heart.svg" alt="Wishlist" class="wishlist-icon" width="16" height="16">
+                            Add to Wishlist
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-4 mb-4">
+            <div class="card">
+                <img src="path_to_related_product3.png" class="card-img-top" alt="Related Product 3">
+                <div class="card-body">
+                    <h5 class="card-title">Power Bank 20000mAh</h5>
+                    <p class="card-text">₱89</p>
+                    <div class="d-flex gap-2">
+                        <button class="btn btn-dark w-50"><i class="bi bi-cart"></i> Add to Cart</button>
+                        <button class="btn btn-outline-dark w-50 btn-wishlist">
+                            <img src="/techora/img/heart.svg" alt="Wishlist" class="wishlist-icon" width="16" height="16">
+                            Add to Wishlist
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-4 mb-4">
+            <div class="card">
+                <img src="path_to_related_product4.png" class="card-img-top" alt="Related Product 4">
+                <div class="card-body">
+                    <h5 class="card-title">Power Bank 20000mAh</h5>
+                    <p class="card-text">₱89</p>
+                    <div class="d-flex gap-2">
+                        <button class="btn btn-dark w-50"><i class="bi bi-cart"></i> Add to Cart</button>
+                        <button class="btn btn-outline-dark w-50 btn-wishlist">
+                            <img src="/techora/img/heart.svg" alt="Wishlist" class="wishlist-icon" width="16" height="16">
+                            Add to Wishlist
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-4 mb-4">
+            <div class="card">
+                <img src="path_to_related_product5.png" class="card-img-top" alt="Related Product 5">
+                <div class="card-body">
+                    <h5 class="card-title">Power Bank 20000mAh</h5>
+                    <p class="card-text">₱89</p>
+                    <div class="d-flex gap-2">
+                        <button class="btn btn-dark w-50"><i class="bi bi-cart"></i> Add to Cart</button>
+                        <button class="btn btn-outline-dark w-50 btn-wishlist">
+                            <img src="/techora/img/heart.svg" alt="Wishlist" class="wishlist-icon" width="16" height="16">
+                            Add to Wishlist
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-4 mb-4">
+            <div class="card">
+                <img src="path_to_related_product6.png" class="card-img-top" alt="Related Product 6">
+                <div class="card-body">
+                    <h5 class="card-title">Power Bank 20000mAh</h5>
+                    <p class="card-text">₱89</p>
+                    <div class="d-flex gap-2">
+                        <button class="btn btn-dark w-50"><i class="bi bi-cart"></i> Add to Cart</button>
+                        <button class="btn btn-outline-dark w-50 btn-wishlist">
+                            <img src="/techora/img/heart.svg" alt="Wishlist" class="wishlist-icon" width="16" height="16">
+                            Add to Wishlist
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+
+  
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"></script>
+    <script src="details.js"></script>
+</body>
+</html>
