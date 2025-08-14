@@ -1,0 +1,134 @@
+body { 
+    background-color: #FFFFFF;
+    color: #0A0A0A;
+    font-family: Arial, sans-serif;
+}
+
+h2 {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #0A0A0A;
+}
+
+h4 {
+    font-size: 1.6rem;
+    font-weight: bold;
+    color: #0A0A0A;
+}
+
+p.text-muted {
+    font-size: 1.2rem;
+    color: #4D4D4D;
+}
+
+div.mt-3 p,
+.card p {
+    font-size: 0.9rem;
+    color: #4D4D4D;
+}
+
+ul {
+    font-size: 1rem;
+    color: #4D4D4D;
+}
+
+ul li {
+    margin-bottom: 5px;
+}
+
+#quantity {
+    width: 60px;
+    margin-right: 10px;
+}
+
+.btn-dark {
+    background-color: #000000;
+    color: #FFFFFF;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.btn-dark:hover {
+    background-color: #333333;
+}
+
+.btn-outline-dark {
+    border: 1px solid #000000;
+    color: #000000;
+    font-weight: bold;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.btn-outline-dark:hover {
+    background-color: #000000;
+    color: #FFFFFF;
+}
+
+.btn-wishlist i {
+    margin-right: 5px;
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+
+.btn-wishlist i.filled {
+    color: red;
+    transform: scale(1.2);
+}
+
+.card {
+    border: 1px solid #E0E0E0;
+    border-radius: 8px;
+    background-color: #FAFAFA;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+}
+
+.card-img-top {
+    height: 200px;
+    object-fit: cover;
+}
+
+.card-body {
+    padding: 10px;
+}
+
+.card-title {
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: #0A0A0A;
+}
+
+.card-text {
+    color: #4D4D4D;
+    font-size: 1rem;
+}
+
+.row {
+    margin-top: 2rem;
+}
+
+.mt-5 { margin-top: 3rem !important; }
+.mt-3 { margin-top: 1rem !important; }
+.mb-4 { margin-bottom: 1.5rem !important; }
+
+.product-buttons {
+    display: flex;
+    gap: 10px;
+    margin-top: 1rem;
+}
+
+.product-buttons .btn {
+    flex: 1;
+    font-size: 0.9rem;
+    padding: 0.6rem 0;
+}
+
+@media (max-width: 576px) {
+    .product-buttons {
+        flex-direction: column;
+    }
+}
