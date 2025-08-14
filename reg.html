@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seller Registration</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="reg.css">
+</head>
+<body>
+    <div class="container-fluid">
+        <div class="row min-vh-100">
+            <!-- Left side - Your logo image -->
+            <div class="col-lg-6 d-flex align-items-center justify-content-center bg-light">
+                <div class="text-center">
+                    <div class="logo-container mb-4">
+                        <!-- Replace with your logo image -->
+                        <img src="your-logo.png" alt="Your Logo" class="img-fluid" style="max-width: 200px;">
+                    </div>
+                </div>
+            </div>
+
+            <!-- Right side - Registration form -->
+            <div class="col-lg-6 d-flex align-items-center justify-content-center">
+                <div class="registration-container w-100">
+                    <div class="registration-header text-center mb-4">
+                        <div class="header-bg">
+                            <h2 class="text-white mb-2">Seller Registration</h2>
+                            <p class="text-white-50 mb-0">Join our marketplace and start selling your products today</p>
+                        </div>
+                    </div>
+
+                    <form id="sellerRegistrationForm" class="px-4">
+                        <div class="row">
+                            <div class="col-md-6 mb-3">
+                                <label for="sellerName" class="form-label">Seller Name</label>
+                                <input type="text" class="form-control" id="sellerName" placeholder="Enter your full name" required>
+                            </div>
+                            <div class="col-md-6 mb-3">
+                                <label for="storeName" class="form-label">Store Name</label>
+                                <input type="text" class="form-control" id="storeName" placeholder="Enter your store name" required>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-md-6 mb-3">
+                                <label for="emailAddress" class="form-label">Email Address</label>
+                                <input type="email" class="form-control" id="emailAddress" placeholder="Enter your email address" required>
+                            </div>
+                            <div class="col-md-6 mb-3">
+                                <label for="contactNumber" class="form-label">Contact Number</label>
+                                <input type="tel" class="form-control" id="contactNumber" placeholder="Enter your phone number" required>
+                            </div>
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="businessAddress" class="form-label">Business Address</label>
+                            <textarea class="form-control" id="businessAddress" rows="3" placeholder="Enter your complete business address" required></textarea>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-md-6 mb-3">
+                                <label for="businessType" class="form-label">Business Type</label>
+                                <select class="form-select" id="businessType" required>
+                                    <option value="">Select your business type</option>
+                                    <option value="individual">Individual</option>
+                                    <option value="small-business">Small Business</option>
+                                    <option value="corporation">Corporation</option>
+                                    <option value="partnership">Partnership</option>
+                                    <option value="llc">LLC</option>
+                                </select>
+                            </div>
+                            <div class="col-md-6 mb-3">
+                                <label for="paypalEmail" class="form-label">PayPal Email Address</label>
+                                <input type="email" class="form-control" id="paypalEmail" placeholder="Enter your PayPal email for payments">
+                                <div class="form-text">This will not send email to your earnings</div>
+                            </div>
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="productCategories" class="form-label">Product Categories</label>
+                            <div class="category-checkboxes">
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" value="electronics" id="electronics">
+                                            <label class="form-check-label" for="electronics">Electronics</label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" value="computers" id="computers">
+                                            <label class="form-check-label" for="computers">Computers & Laptops</label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" value="mobile" id="mobile">
+                                            <label class="form-check-label" for="mobile">Mobile Devices</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" value="accessories" id="accessories">
+                                            <label class="form-check-label" for="accessories">Accessories</label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" value="gaming" id="gaming">
+                                            <label class="form-check-label" for="gaming">Gaming</label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" value="software" id="software">
+                                            <label class="form-check-label" for="software">Software</label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-text">Select all categories that apply to your products</div>
+                        </div>
+
+                        <div class="mb-4">
+                            <label for="businessPermit" class="form-label">Upload Business Permit or Valid ID</label>
+                            <div class="upload-area" id="uploadArea">
+                                <div class="upload-icon">
+                                    <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+                                        <polyline points="14,2 14,8 20,8"></polyline>
+                                        <line x1="16" y1="13" x2="8" y2="13"></line>
+                                        <line x1="16" y1="17" x2="8" y2="17"></line>
+                                        <polyline points="10,9 9,9 8,9"></polyline>
+                                    </svg>
+                                </div>
+                                <p class="upload-text">Click to upload file</p>
+                                <p class="upload-subtext">PDF, JPG, PNG (Max 10MB)</p>
+                                <input type="file" id="businessPermit" class="file-input" accept=".pdf,.jpg,.jpeg,.png" required>
+                            </div>
+                        </div>
+
+                        <div class="mb-4">
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" id="agreeTerms" required>
+                                <label class="form-check-label" for="agreeTerms">
+                                    I agree to the <a href="#" class="text-decoration-none">Terms and Conditions</a> and <a href="#" class="text-decoration-none">Privacy Policy</a>
+                                </label>
+                            </div>
+                        </div>
+
+                        <div class="d-grid">
+                            <button type="submit" class="btn btn-primary btn-lg submit-btn">
+                                Submit Registration
+                            </button>
+                            <p class="text-center mt-3 mb-0 text-muted">
+                                We'll review your application and get back to you within 2-3 business days
+                            </p>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Custom JS -->
+    <script src="reg.js"></script>
+</body>
+</html>
